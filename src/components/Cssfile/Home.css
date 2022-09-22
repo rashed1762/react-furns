@@ -1,0 +1,61 @@
+
+.carinfo{
+    color: black;
+    margin-bottom: 130px;
+    margin-left: 600px;
+    text-align: start;
+}
+.car{
+    background-color: blueviolet;
+}
+.img1{
+    height: 500px;
+    width: 500px;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+.bannerh1{
+    font-size: 60px;
+}
+.cat-part{
+   margin-top: 70px;
+}
+.img3{
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 50px;
+   
+}
+.img3:hover{
+    border: 5px dotted;
+    transition: .8s ;
+    border-color: rgb(185, 212, 36);
+    cursor: pointer;
+
+}
+
+@media (max-width:500px) {
+    .carinfo{
+        height: 10px;
+        width: 40px;
+
+    }
+    .car{
+        height: 320px;
+    }
+    .img1{
+        height: 180px;
+        width: 130px;
+    }
+    .bannerh1{
+        font-size: 10px;
+    }
+    .img3{
+        margin-left: 90px;
+        margin-bottom: 15px;
+    }
+    .cath5{
+        padding-left: 90px;
+        
+    }
+}

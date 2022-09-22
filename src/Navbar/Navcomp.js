@@ -1,7 +1,9 @@
 import React from 'react';
+import '../components/Cssfile/Nav.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '../assests/logo.png';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {
     Link
@@ -11,23 +13,24 @@ import {
 const Navcomp = () => {
     return (
         <div>
-            <Navbar bg="dark colour-white" expand="lg">
+            <Navbar className='navstyle'  expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={logo} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-           <Link><Nav.Link className='Linkstyle' as={Link} to="/" >Home</Nav.Link></Link> 
-           <Link><Nav.Link as={Link} to="/about" >About</Nav.Link></Link> 
+          <Nav className="mx-auto">
+           <Link><Nav.Link className='linkstyle'  as={Link} to="/" >Home</Nav.Link></Link> 
+           <Link><Nav.Link className='linkstyle' as={Link} to="/about" >About</Nav.Link></Link> 
             <NavDropdown title="Home Furniture" id="basic-nav-dropdown">
-             <Link><NavDropdown.Item as={Link} to="/dining" >Dining</NavDropdown.Item></Link> 
-              <Link><NavDropdown.Item as={Link} to="/Living" >
+             <Link><NavDropdown.Item className='linkstyle' as={Link} to="/dining" >Dining</NavDropdown.Item></Link> 
+              <Link><NavDropdown.Item className='linkstyle' as={Link} to="/Living" >
                 Living
               </NavDropdown.Item></Link>
-              <NavDropdown.Item as={Link} to="/bed" >
+              <NavDropdown.Item className='linkstyle' as={Link} to="/bed" >
                 Bed Room
               </NavDropdown.Item>
             </NavDropdown>
+            <Link><Nav.Link className='linkstyle' as={Link} to="/contact" >Contact</Nav.Link></Link> 
           </Nav>
         </Navbar.Collapse>
       </Container>

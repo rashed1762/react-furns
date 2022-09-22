@@ -13,6 +13,8 @@ import About from './Pages/About';
 import Dining from './Pages/Dining';
 import Living from './Pages/Living';
 import Bed from './Pages/Bed';
+import Contact from './Pages/Contact';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Navcomp></Navcomp>
+
     </div>
     <Routes>
       <Route path="/" element={<Home></Home>}>
@@ -29,6 +32,7 @@ function App() {
       <Route path="/dining" element={<Dining></Dining>}></Route>
       <Route path="/Living" element={<Living></Living>}></Route>
       <Route path="/bed" element={<Bed></Bed>}></Route>
+      <Route path="/contact" element={<Contact></Contact>}></Route>
     </Routes>
     </BrowserRouter>
     
