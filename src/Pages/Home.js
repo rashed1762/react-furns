@@ -9,11 +9,15 @@ import '../components/Cssfile/Home.css';
 import img1 from '../assests/banner1.png';
 import img2 from '../assests/banner2.png';
 import Carousel from 'react-bootstrap/Carousel';
+import imgdiscount from '../assests/discount1.jpg';
+import imgdiscount2 from '../assests/discount2.avif';
+import imgoffer from '../assests/50-percent-off-stamp-png.png';
 
 import {
     Link
   } from "react-router-dom";
 import Cardcomp from '../components/Card/Cardcomp';
+import Fotercomp from '../components/Foter/Fotercomp';
 
 const Home = () => {
     return (
@@ -101,6 +105,50 @@ const Home = () => {
             
         <section className='mt-5'>
             <Cardcomp></Cardcomp>
+        </section>
+
+        <section>
+          <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className='discountimg1'>
+              <img className='disimg1' src={imgdiscount} alt="" />
+              </div>
+              <div className='discountimg1info'>
+                <h1>Sale Furniture For Summer</h1>
+              </div>
+              <div className='offer'>
+                <img className='imgoffer' src={imgoffer} alt="" />
+              </div>
+
+          
+
+            </div>
+            <div className="col-md-6">
+              <div className='disimg2'>
+              <img className='discountimg2' src={imgdiscount2} alt="" />
+              </div>
+
+              <div className='discountimg2info'>
+                  <h1>
+                    Office Chair
+                  </h1>
+                  <h1>
+                    For Best Offer
+                  </h1>
+              </div>
+              <div className='offer2'>
+              <img className='imgoffer' src={imgoffer} alt="" />
+              </div>
+            
+            </div>
+          </div>
+          </div>
+          
+        </section>
+
+        <section>
+          <Fotercomp></Fotercomp>
         </section>
 
         </div>

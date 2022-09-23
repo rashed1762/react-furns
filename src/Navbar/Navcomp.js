@@ -19,7 +19,7 @@ const Navcomp = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-           <Link><Nav.Link className='linkstyle'  as={Link} to="/" >Home</Nav.Link></Link> 
+           <Link><Nav.Link className='linkstyle'  as={Link} to="/home" >Home</Nav.Link></Link> 
            <Link><Nav.Link className='linkstyle' as={Link} to="/about" >About</Nav.Link></Link> 
             <NavDropdown title="Home Furniture" id="basic-nav-dropdown">
              <Link><NavDropdown.Item className='linkstyle' as={Link} to="/dining" >Dining</NavDropdown.Item></Link> 

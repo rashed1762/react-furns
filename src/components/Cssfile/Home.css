@@ -33,6 +33,41 @@
     cursor: pointer;
 
 }
+.discountimg2{
+    height: 470px;
+    width: 100%;
+}
+.discountimg1{
+position: absolute;
+}
+.discountimg1info{
+position: relative;
+margin-left: 130px;
+margin-top: 50px;
+}
+
+.disimg2{
+position: absolute;
+}
+.discountimg2info{
+    position: relative;
+    margin-top: 220px;
+    margin-left: 40px;
+}
+.imgoffer{
+    height: 90px;
+    width: 90px;
+    
+}
+.offer{
+    position: relative;
+    margin-top: 230px;
+   
+}
+.offer2{
+    position: relative;
+    margin-bottom: 120px;
+}
 
 @media (max-width:500px) {
     .carinfo{
@@ -57,5 +92,12 @@
     .cath5{
         padding-left: 90px;
         
+    }
+    .disimg1{
+        height: 100%;
+        width: 100%;
+    }
+    .offer{
+          display:block;
     }
 }

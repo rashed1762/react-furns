@@ -14,6 +14,7 @@ import Dining from './Pages/Dining';
 import Living from './Pages/Living';
 import Bed from './Pages/Bed';
 import Contact from './Pages/Contact';
+import Productdetails from './Pages/Productdetails';
 
 
 
@@ -25,8 +26,9 @@ function App() {
 
     </div>
     <Routes>
-      <Route path="/" element={<Home></Home>}>
+      <Route path="/home" element={<Home></Home>}>
       </Route>
+      <Route path="/home/:productId" element={<Productdetails></Productdetails>}></Route>
       <Route path="/about" element={<About></About>} >
       </Route>
       <Route path="/dining" element={<Dining></Dining>}></Route>

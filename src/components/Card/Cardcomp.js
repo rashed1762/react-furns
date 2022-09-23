@@ -3,13 +3,20 @@ import './Cardcomp.css';
 import data from './data';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
-
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import {
+  Link
+} from "react-router-dom";
+import featuredata from './featuredata';
+import onsaledata from './onsaledata';
+import trendingdata from './trendingdata';
 
 const Cardcomp = () => {
     const [newArival,setNewAraival]=useState(data);
+    const [feature,setFeature]=useState(featuredata);
+    const [onsale,setOnsale]=useState(onsaledata);
+    const [trending,setTrending]=useState(trendingdata);
     return (
         <div>
             <div className='our-product'>
@@ -28,7 +35,7 @@ const Cardcomp = () => {
       <Tab>Trending</Tab>
     </TabList>
 
-    <TabPanel>
+    <TabPanel >
         <div className="container mt-5">
     <div className="row">
       {
@@ -42,7 +49,8 @@ const Cardcomp = () => {
       <Card.Img className='crdimg' variant="top" src={img} />
       <Card.Body className='crdbody'>
         <div className='d-flex btn'>
-        <Button variant="outline-danger">Details</Button>{' '}
+
+       <Link to={`/home/${value.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
         <Button variant="outline-success">Add to Cart</Button>{' '}
         </div>
        
@@ -59,8 +67,7 @@ const Cardcomp = () => {
                             
                         </>
                         
-                        
-                    
+                           
             )
         })
       }
@@ -68,13 +75,121 @@ const Cardcomp = () => {
       </div>
     </TabPanel>
     <TabPanel>
-      
+        <div className="container">
+        <div className="row">
+      {
+        feature.map((featurevalue)=>{
+            const {img,title,price}=featurevalue;
+            return(
+                <>
+                        
+                            <div className="col-md-3 ct" >
+                            <Card className='crdstyle'  style={{ width: '18rem' }}>
+      <Card.Img className='crdimg' variant="top" src={img} />
+      <Card.Body className='crdbody'>
+        <div className='d-flex btn'>
+
+       <Link to={`/home/${featurevalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
+        <Button variant="outline-success">Add to Cart</Button>{' '}
+        </div>
+       
+      </Card.Body>
+      <Card.Body className='crdbody2' >
+        <Card.Title className='fs-6'>{title}</Card.Title>
+        <Card.Text>
+         {price}
+        </Card.Text>
+        
+      </Card.Body>
+    </Card>
+                            </div>
+                            
+                        </>
+                        
+                           
+            )
+        })
+      }
+      </div>
+        </div>
     </TabPanel>
     <TabPanel>
-      <h2>Any content 3</h2>
+      <div className="container">
+      <div className="row">
+      {
+        onsale.map((onsalevalue)=>{
+            const {img,title,price}=onsalevalue;
+            return(
+                <>
+                        
+                            <div className="col-md-3 ct" >
+                            <Card className='crdstyle'  style={{ width: '18rem' }}>
+      <Card.Img className='crdimg' variant="top" src={img} />
+      <Card.Body className='crdbody'>
+        <div className='d-flex btn'>
+
+       <Link to={`/home/${onsalevalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
+        <Button variant="outline-success">Add to Cart</Button>{' '}
+        </div>
+       
+      </Card.Body>
+      <Card.Body className='crdbody2' >
+        <Card.Title className='fs-6'>{title}</Card.Title>
+        <Card.Text>
+         {price}
+        </Card.Text>
+        
+      </Card.Body>
+    </Card>
+                            </div>
+                            
+                        </>
+                        
+                           
+            )
+        })
+      }
+      </div>
+      </div>
     </TabPanel>
     <TabPanel>
-      <h2>Any content 4</h2>
+      <div className="container">
+      <div className="row">
+      {
+        trending.map((trendingvalue)=>{
+            const {img,title,price}=trendingvalue;
+            return(
+                <>
+                        
+                            <div className="col-md-3 ct" >
+                            <Card className='crdstyle'  style={{ width: '18rem' }}>
+      <Card.Img className='crdimg' variant="top" src={img} />
+      <Card.Body className='crdbody'>
+        <div className='d-flex btn'>
+
+       <Link to={`/home/${trendingvalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
+        <Button variant="outline-success">Add to Cart</Button>{' '}
+        </div>
+       
+      </Card.Body>
+      <Card.Body className='crdbody2' >
+        <Card.Title className='fs-6'>{title}</Card.Title>
+        <Card.Text>
+         {price}
+        </Card.Text>
+        
+      </Card.Body>
+    </Card>
+                            </div>
+                            
+                        </>
+                        
+                           
+            )
+        })
+      }
+      </div>
+      </div>
     </TabPanel>
   </Tabs>
             </div>
