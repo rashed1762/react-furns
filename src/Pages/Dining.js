@@ -15,7 +15,8 @@ const Dining = () => {
 
 
             
-            <div className='container mt-5'>
+            <div className='container mt-5' data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <div className="row">
                 {
                     dining.map((diningvalue)=>{

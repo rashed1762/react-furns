@@ -21,7 +21,8 @@ const About = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <img className='aboutimg1' src={img1} alt="" />
-                        <div className='mt-5'>
+                        <div className='mt-5' data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">
                             <h5>Our Stories</h5>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni unde quia non at, iste autem maxime temporibus eaque expedita repudiandae fugiat deserunt doloremque eum quibusdam accusamus. Voluptatibus aperiam incidunt placeat dolor fugit magni culpa, saepe beatae aut dolorem ut quae corrupti commodi ex eaque et quaerat voluptate soluta voluptas.</p>
                             
@@ -30,7 +31,8 @@ const About = () => {
                     </div>
                     <div className="col-md-6">
                         <img className='aboutimg2' src={img2} alt="" />
-                        <div className='mt-5'>
+                        <div className='mt-5' data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
                             <h5>Our Mission</h5>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni unde quia non at, iste autem maxime temporibus eaque expedita repudiandae fugiat deserunt doloremque eum quibusdam accusamus. Voluptatibus aperiam incidunt placeat dolor fugit magni culpa, saepe beatae aut dolorem ut quae corrupti commodi ex eaque et quaerat voluptate soluta voluptas.</p>
                             

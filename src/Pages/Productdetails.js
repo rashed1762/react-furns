@@ -12,11 +12,11 @@ const Productdetails = () => {
         <div className='productdetails'>
         <section className='section-product'>
             <div className='d-flex style'>
-                <div>
+                <div data-aos="flip-up">
                 <img className='img-style' src={img} alt={title} />
                 </div>
             
-            <div className='info'>
+            <div className='info' data-aos="zoom-out">
             <h4>{title}</h4>
                 <p>{desc}</p>
                 <h6>{price}</h6>

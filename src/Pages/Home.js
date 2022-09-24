@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Button from 'react-bootstrap/Button';
 import img3 from '../assests/cat1.png';
 import img4 from '../assests/cat2.png';
@@ -20,22 +22,31 @@ import Cardcomp from '../components/Card/Cardcomp';
 import Fotercomp from '../components/Foter/Fotercomp';
 
 const Home = () => {
+  useEffect(()=>{
+    Aos.init({});
+  },[]);
     return (
         <div>
             
             <div>
             <Carousel className='car'>
       <Carousel.Item>
+        <div>
+          
+        </div>
         <img
           className="d-block  img1"
           src={img1}
           alt="First slide"
         />
-        <Carousel.Caption className='carinfo'>
+        <Carousel.Caption className='carinfo' >
+          <div data-aos="fade-left" >
           <h3>Best Seller</h3>
           <h1 className='bannerh1'>Creative Sofa</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Button variant="danger">Danger</Button>{' '}
+          </div>
+         
+          <Button variant="danger">SHOP NOW</Button>{' '}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -45,11 +56,16 @@ const Home = () => {
           alt="Second slide"
         />
 
-        <Carousel.Caption className='carinfo'>
+        <Carousel.Caption className='carinfo' >
+          <div data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500">
           <h3>New Product</h3>
           <h1 className='bannerh1'>Flexible chair</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button variant="danger">Danger</Button>{' '}
+          <Button variant="success">SHOP NOW</Button>{' '}
+          </div>
+          
         </Carousel.Caption>
       </Carousel.Item>
     
@@ -104,7 +120,7 @@ const Home = () => {
             {/* card section */}
             
         <section className='mt-5'>
-            <Cardcomp></Cardcomp>
+            <Cardcomp  ></Cardcomp>
         </section>
 
         <section>

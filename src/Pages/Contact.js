@@ -30,7 +30,9 @@ const Contact = () => {
             <div className='container mt-5'>
                 <div className="row">
                     <div className="col-md-3 contact-info pt-5">
-                        <div className='ms-2'>
+                        <div className='ms-2' data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <h2>Contact Info</h2>
                         <br />
                         <h6 className='infostyle'><b>Phone: <br /> </b>  +8801314540002</h6>
@@ -44,7 +46,7 @@ const Contact = () => {
                     <div className="col-md-1">
 
                     </div>
-                    <div className="col-md-8 contact-part pt-5">
+                    <div className="col-md-8 contact-part pt-5" data-aos="zoom-in-left">
                         <div className='ps-3 contactstyle'>
                         <h2 >GET IN TOUCH</h2>
                         <form ref={form} onSubmit={sendEmail}>

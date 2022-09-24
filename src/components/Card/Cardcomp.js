@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cardcomp.css';
 import data from './data';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -11,15 +12,20 @@ import {
 import featuredata from './featuredata';
 import onsaledata from './onsaledata';
 import trendingdata from './trendingdata';
+import Aos from 'aos';
 
 const Cardcomp = () => {
     const [newArival,setNewAraival]=useState(data);
     const [feature,setFeature]=useState(featuredata);
     const [onsale,setOnsale]=useState(onsaledata);
     const [trending,setTrending]=useState(trendingdata);
+
+    useEffect(()=>{
+      Aos.init({});
+    },[]);
     return (
         <div>
-            <div className='our-product'>
+            <div className='our-product' data-aos="fade-right" >
             <h1>Our Product</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate suscipit tempora debitis dolorem quasi dolore aliquam ipsa voluptatum veniam, alias esse nam voluptatem eaque placeat, minus est maiores. At, omnis.</p>
             </div>
@@ -44,7 +50,7 @@ const Cardcomp = () => {
             return(
                 <>
                         
-                            <div className="col-md-3 ct" >
+                            <div className="col-md-3 ct" data-aos="zoom-in" >
                             <Card className='crdstyle'  style={{ width: '18rem' }}>
       <Card.Img className='crdimg' variant="top" src={img} />
       <Card.Body className='crdbody'>
@@ -83,7 +89,11 @@ const Cardcomp = () => {
             return(
                 <>
                         
-                            <div className="col-md-3 ct" >
+                            <div className="col-md-3 ct" 
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="300"
+                            data-aos-offset="0">
                             <Card className='crdstyle'  style={{ width: '18rem' }}>
       <Card.Img className='crdimg' variant="top" src={img} />
       <Card.Body className='crdbody'>
@@ -122,7 +132,8 @@ const Cardcomp = () => {
             return(
                 <>
                         
-                            <div className="col-md-3 ct" >
+                            <div className="col-md-3 ct" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" >
                             <Card className='crdstyle'  style={{ width: '18rem' }}>
       <Card.Img className='crdimg' variant="top" src={img} />
       <Card.Body className='crdbody'>
@@ -161,7 +172,7 @@ const Cardcomp = () => {
             return(
                 <>
                         
-                            <div className="col-md-3 ct" >
+                            <div className="col-md-3 ct" data-aos="fade-up-left" >
                             <Card className='crdstyle'  style={{ width: '18rem' }}>
       <Card.Img className='crdimg' variant="top" src={img} />
       <Card.Body className='crdbody'>

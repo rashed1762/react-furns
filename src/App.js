@@ -19,9 +19,12 @@ import Productdetails from './Pages/Productdetails';
 
 
 function App() {
+  
   return (
     <BrowserRouter>
     <div className="App">
+      
+   
       <Navcomp></Navcomp>
 
     </div>
