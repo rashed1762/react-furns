@@ -32,8 +32,10 @@ function App() {
       <Route path="/about" element={<About></About>} >
       </Route>
       <Route path="/dining" element={<Dining></Dining>}></Route>
+      <Route path="/dining/:productId" element={<Productdetails></Productdetails>}></Route>
       <Route path="/Living" element={<Living></Living>}></Route>
       <Route path="/bed" element={<Bed></Bed>}></Route>
+      <Route path="/bed/:productId" element={<Productdetails></Productdetails>}></Route>
       <Route path="/contact" element={<Contact></Contact>}></Route>
     </Routes>
     </BrowserRouter>

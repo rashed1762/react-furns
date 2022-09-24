@@ -51,9 +51,20 @@ const Productdetails = () => {
                 <br />
                 <br />
                 
-                <Link to="/home"><Button variant="primary">Go Back</Button>{' '}</Link>
+                
+                
+
+
             </div>
             </div>
+            <div className='mt-5'>
+            <Link to="/home"><Button variant="outline-primary">Back to home</Button>{' '}</Link>
+                <Link to="/about"><Button variant="outline-info">Back to about</Button>{' '}</Link>
+                <Link to="/dining"><Button variant="outline-warning">Back to dining</Button>{' '}</Link>
+                <Link to="/bed"><Button variant="outline-danger">Back to bedroom</Button>{' '}</Link>
+                <Link to="/living"><Button variant="outline-secondary">Back to living room</Button>{' '}</Link>
+            </div>
+           
             
             
             

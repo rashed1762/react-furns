@@ -17,7 +17,7 @@ const About = () => {
                 <h1>Furns is a global furniture destination for somethings. We sell cutting-edge furniture and offer a wide variety of fashion-related content.</h1>
             </div>
 
-            <div className='container'>
+            <div className='container mt-5'>
                 <div className="row">
                     <div className="col-md-6">
                         <img className='aboutimg1' src={img1} alt="" />
@@ -31,7 +31,7 @@ const About = () => {
                     <div className="col-md-6">
                         <img className='aboutimg2' src={img2} alt="" />
                         <div className='mt-5'>
-                            <h5>Our Nission</h5>
+                            <h5>Our Mission</h5>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni unde quia non at, iste autem maxime temporibus eaque expedita repudiandae fugiat deserunt doloremque eum quibusdam accusamus. Voluptatibus aperiam incidunt placeat dolor fugit magni culpa, saepe beatae aut dolorem ut quae corrupti commodi ex eaque et quaerat voluptate soluta voluptas.</p>
                             
                         </div>

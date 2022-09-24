@@ -7,14 +7,14 @@ const onsaledata=[
         price: "$199.0",
       },
       {
-        id: 5,
+        id: 7,
         img: "https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F2_f43a8aeb-8572-4889-9c86-cc7914ee0649.jpg%3Fv%3D1632547434&w=1920&q=75",
         title: "High back lounge office chairs",
         desc:"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,",
         price:"$288.0"
       },
       {
-        id: 7,
+        id: 5,
         img: "https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F2_bb835864-60d7-4be5-8e85-cfee7c9f784d.jpg%3Fv%3D1632545382&w=1920&q=75",
         title: "Round Dining Table without chair",
         desc:"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes",

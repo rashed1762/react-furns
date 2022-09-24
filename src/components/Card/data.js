@@ -55,6 +55,23 @@ const data=[
             desc:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of",
             price:"$199.0"
           },
+          {
+            id: 9,
+            img: "https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F5_c8625a3e-4a89-478d-8f51-b5b5d6b1057a.jpg%3Fv%3D1632549533&w=384&q=75",
+            title: "Broma Bed Side Table",
+            desc:"Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit,",
+            price:"$349.0"
+          },
+          {
+            id: 10,
+            img: "https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F4_83399f76-6397-4d8d-966a-b9dbff8f0c67.jpg%3Fv%3D1632549403&w=384&q=75",
+            title:"Bachelor Bed",
+            desc:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of",
+            price:"$199.0"
+          },
+          
+
+
          
 
 

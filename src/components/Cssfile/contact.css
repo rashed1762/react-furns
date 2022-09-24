@@ -1,0 +1,42 @@
+.contact{
+    background-color: aliceblue;
+    height: 230px;
+    text-align: center;
+    padding-top: 60px;
+    
+}
+
+.contact-info{
+    background-color: antiquewhite;
+    height: 500px; 
+    box-shadow: 10px 10px 20px rgb(181, 114, 232);
+   
+}
+
+.infostyle{
+    word-spacing: 30px;
+}
+.contact-part{
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 20px rgb(181, 114, 232);
+}
+.name{
+    width: 420px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.massage{
+    width: 420px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width:500px) {
+    .name{
+        width: 100%;
+    }
+    .massage{
+        width: 100%;
+    }
+}
