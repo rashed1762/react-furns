@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import bedroomdata from '../components/datapart/bedroomdata';
+import Fotercomp from '../components/Foter/Fotercomp';
+import {  useCart } from "react-use-cart";
 
 const Bed = () => {
+    const { addItem } = useCart();
     const [bed,setBed]=useState(bedroomdata);
     return (
         <div>
@@ -31,7 +34,7 @@ const Bed = () => {
         <div className='d-flex btn'>
 
        <Link to={`/bed/${bedvalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
-        <Button variant="outline-success">Add to Cart</Button>{' '}
+       <Button onClick={()=>addItem(bedvalue)} variant="outline-danger">ADD TO CART</Button>
         </div>
        
       </Card.Body>
@@ -51,6 +54,7 @@ const Bed = () => {
             </div>
            
         </div>
+        <Fotercomp></Fotercomp>
         </div>
     );
 };

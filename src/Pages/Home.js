@@ -41,12 +41,12 @@ const Home = () => {
         />
         <Carousel.Caption className='carinfo' >
           <div data-aos="fade-left" >
-          <h3>Best Seller</h3>
+          <h3 className='seller'>Best Seller</h3>
           <h1 className='bannerh1'>Creative Sofa</h1>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p className='p'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
          
-          <Button variant="danger">SHOP NOW</Button>{' '}
+          <Button className='btn-1' variant="danger">SHOP NOW</Button>{' '}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -60,10 +60,10 @@ const Home = () => {
           <div data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="1500">
-          <h3>New Product</h3>
+          <h3 className='new-product'>New Product</h3>
           <h1 className='bannerh1'>Flexible chair</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button variant="success">SHOP NOW</Button>{' '}
+          <p className='p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Button className='btn-2' variant="success">SHOP NOW</Button>{' '}
           </div>
           
         </Carousel.Caption>

@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Oswald:wght@300&family=Rubik+Dirt&family=Rubik+Distressed&display=swap');
+
 .navstyle{
     background-color: rgb(211, 145, 247);
-    text-decoration: none;
+    
 }
 .linkstyle{
     text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.linkstyle:hover{
+    color: rgb(93, 174, 77);
+    letter-spacing: 2px;
+    transition: 0.7s;
+    font-weight: bold;
+    text-underline-position: above;
+   
+}
+.cart-total{
+    background-color: rgb(181, 14, 172);
+    color: white;
+    border-radius: 100px;
+    padding: 5px;
+    
+    
 }

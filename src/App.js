@@ -15,12 +15,18 @@ import Living from './Pages/Living';
 import Bed from './Pages/Bed';
 import Contact from './Pages/Contact';
 import Productdetails from './Pages/Productdetails';
+import Cart from './Pages/Cart';
+import Search from './Pages/Search';
+import Login from './Pages/Login';
+import { CartProvider} from "react-use-cart";
 
 
 
 function App() {
   
   return (
+    <>
+    <CartProvider>
     <BrowserRouter>
     <div className="App">
       
@@ -29,7 +35,8 @@ function App() {
 
     </div>
     <Routes>
-      <Route path="/home" element={<Home></Home>}>
+    
+      <Route path="/" element={<Home></Home>}>
       </Route>
       <Route path="/home/:productId" element={<Productdetails></Productdetails>}></Route>
       <Route path="/about" element={<About></About>} >
@@ -40,8 +47,14 @@ function App() {
       <Route path="/bed" element={<Bed></Bed>}></Route>
       <Route path="/bed/:productId" element={<Productdetails></Productdetails>}></Route>
       <Route path="/contact" element={<Contact></Contact>}></Route>
+      <Route path="/cart" element={<Cart></Cart>}></Route>
+      <Route path="/search" element={<Search></Search>}></Route>
+      <Route path="/login" element={<Login></Login>}></Route>
     </Routes>
     </BrowserRouter>
+    </CartProvider>
+
+    </>
     
   );
 }

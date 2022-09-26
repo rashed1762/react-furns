@@ -4,6 +4,7 @@ import '../components/Cssfile/living.css';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import Fotercomp from '../components/Foter/Fotercomp';
 
 
 const Living = () => {
@@ -19,6 +20,10 @@ const Living = () => {
             <FontAwesomeIcon className='icon' icon={faBagShopping} />
             <h1 className='text-center mt-3'>There are no products!</h1>
             </div>
+
+            <section>
+                <Fotercomp></Fotercomp>
+            </section>
         </div>
     );
 };

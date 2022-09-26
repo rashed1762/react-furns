@@ -4,6 +4,7 @@ import '.././components/Cssfile/contact.css';
 import { useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
+import Fotercomp from '../components/Foter/Fotercomp';
 
 const Contact = () => {
     const form = useRef();
@@ -24,7 +25,7 @@ const Contact = () => {
         <div>
             <div className='contact'>
                 <h1>CONTACT</h1>
-                <h6 ><Link to="/home">HOME</Link>  / <Link to="/about"> ABOUT</Link></h6> 
+                <h6 ><Link to="/">HOME</Link>  / <Link to="/about"> ABOUT</Link></h6> 
             </div>
 
             <div className='container mt-5'>
@@ -74,6 +75,10 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+
+            <section className='mt-5'>
+                <Fotercomp></Fotercomp>
+            </section>
         </div>
     );
 };

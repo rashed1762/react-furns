@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import diningdata from '../components/datapart/diningdata';
+import Fotercomp from '../components/Foter/Fotercomp';
+import {  useCart } from "react-use-cart";
 
 const Dining = () => {
+    const { addItem } = useCart();
     const [dining,setDining]=useState(diningdata);
     return (
         <div>
@@ -29,7 +32,7 @@ const Dining = () => {
         <div className='d-flex btn'>
 
        <Link to={`/dining/${diningvalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
-        <Button variant="outline-success">Add to Cart</Button>{' '}
+       <Button onClick={()=>addItem(diningvalue)} variant="outline-danger">ADD TO CART</Button>
         </div>
        
       </Card.Body>
@@ -47,8 +50,13 @@ const Dining = () => {
                 }
             </div>
             </div>
+
+            <section>
+                <Fotercomp></Fotercomp>
+            </section>
            
         </div>
+    
     );
 };
 

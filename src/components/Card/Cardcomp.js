@@ -13,8 +13,12 @@ import featuredata from './featuredata';
 import onsaledata from './onsaledata';
 import trendingdata from './trendingdata';
 import Aos from 'aos';
+import {  useCart } from "react-use-cart";
+
 
 const Cardcomp = () => {
+  const { addItem } = useCart();
+  
     const [newArival,setNewAraival]=useState(data);
     const [feature,setFeature]=useState(featuredata);
     const [onsale,setOnsale]=useState(onsaledata);
@@ -57,7 +61,7 @@ const Cardcomp = () => {
         <div className='d-flex btn'>
 
        <Link to={`/home/${value.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
-        <Button variant="outline-success">Add to Cart</Button>{' '}
+       <Button onClick={()=>addItem(value)} variant="outline-danger">ADD TO CART</Button>
         </div>
        
       </Card.Body>
@@ -100,7 +104,7 @@ const Cardcomp = () => {
         <div className='d-flex btn'>
 
        <Link to={`/home/${featurevalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
-        <Button variant="outline-success">Add to Cart</Button>{' '}
+        <Button onClick={()=>addItem(featurevalue)} variant="outline-danger">ADD TO CART</Button>
         </div>
        
       </Card.Body>
@@ -140,7 +144,7 @@ const Cardcomp = () => {
         <div className='d-flex btn'>
 
        <Link to={`/home/${onsalevalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
-        <Button variant="outline-success">Add to Cart</Button>{' '}
+       <Button onClick={()=>addItem(onsalevalue)} variant="outline-danger">ADD TO CART</Button>
         </div>
        
       </Card.Body>
@@ -179,7 +183,7 @@ const Cardcomp = () => {
         <div className='d-flex btn'>
 
        <Link to={`/home/${trendingvalue.id}`} ><Button variant="outline-danger">Details</Button>{' '}</Link> 
-        <Button variant="outline-success">Add to Cart</Button>{' '}
+       <Button onClick={()=>addItem(trendingvalue)} variant="outline-danger">ADD TO CART</Button>
         </div>
        
       </Card.Body>

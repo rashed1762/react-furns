@@ -3,9 +3,11 @@ import Button from 'react-bootstrap/Button';
 import {Link, useParams } from 'react-router-dom';
 import data from '../components/Card/data';
 import '../components/Cssfile/Productdetail.css';
+import {  useCart } from "react-use-cart";
 
 const Productdetails = () => {
-    const {productId}=useParams();
+    const { addItem } = useCart();
+    const {productId}=useParams();  
     const value=data.find((value)=>value.id==productId);
     const {img,title,desc,price}=value;
     return (
@@ -52,13 +54,14 @@ const Productdetails = () => {
                 <br />
                 
                 
+                <Button onClick={()=>addItem(value)} variant="outline-danger">ADD TO CART</Button>
                 
 
 
             </div>
             </div>
             <div className='mt-5'>
-            <Link to="/home"><Button variant="outline-primary">Back to home</Button>{' '}</Link>
+            <Link to="/"><Button variant="outline-primary">Back to home</Button>{' '}</Link>
                 <Link to="/about"><Button variant="outline-info">Back to about</Button>{' '}</Link>
                 <Link to="/dining"><Button variant="outline-warning">Back to dining</Button>{' '}</Link>
                 <Link to="/bed"><Button variant="outline-danger">Back to bedroom</Button>{' '}</Link>
