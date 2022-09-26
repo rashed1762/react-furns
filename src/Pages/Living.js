@@ -11,7 +11,7 @@ const Living = () => {
     return (
         <div>
              <div className='contact'>
-                <h1>DINING</h1>
+                <h1>Living Room</h1>
                 <h6 ><Link to="/home">HOME</Link>  / <Link to="/about"> ABOUT</Link></h6> 
             </div>
 
